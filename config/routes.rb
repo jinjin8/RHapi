@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'terms#index'
+  root to: 'clinical_vocabularies#index'
   concern :paginatable do
     get '(page/:page)', action: :index, on: :collection, as: ''
   end
-  resources :terms
+  resources :clinical_vocabularies
 end
