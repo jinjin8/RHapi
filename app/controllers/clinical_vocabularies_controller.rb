@@ -1,6 +1,6 @@
 class ClinicalVocabulariesController < ApplicationController
   def index
-    term = ClinicalVocabulary.first
-    render json: term
+    clinical_vocabulary = ClinicalVocabulary.first
+    render json: clinical_vocabulary
   end
 end
