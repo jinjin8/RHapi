@@ -34,5 +34,5 @@ Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app wi
 *This software is licensed under MIT license.*
 
 ```
-Copyright (c) 2017 Jin Camou, Susha Dore, Ben Williams
+Copyright (c) 2017 Susha Dore, Jin Camou, Ben Williams
 ```
