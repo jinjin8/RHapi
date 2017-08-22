@@ -10,7 +10,7 @@ class ClinicalVocabulariesController < ApplicationController
   end
 
   def by_term
-    clinical_vocabulary = ClinicalVocabulary.by_term(params[:term], params[:source_language], params[:output_language])
+    clinical_vocabulary = ClinicalVocabulary.by_term(params[:term], params[:source_lang], params[:output_lang])
     render json: clinical_vocabulary
   end
 end
