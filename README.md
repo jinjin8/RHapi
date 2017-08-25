@@ -20,12 +20,18 @@ An API that returns stored procedures from KnowledgeBase dbo.
 * `$ git clone https://git-codecommit.us-west-2.amazonaws.com/v1/repos/RHapi`
 * `$ cd RHapi`
 
+Create a .env file in the home directory with:
+HIDDEN_USERNAME=jcamou
+HIDDEN_PASSWORD=jcamou.2.718
+HIDDEN_HOST=50.206.8.245
+
+
 ## Development server
 Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
 ## Paths
 * Read: localhost:3000/clinical_vocabularies
-* Search by Term: localhost:3000/clinical_vocabularies/by_term?Term=Diabetes
+* Search by term: http://localhost:3000/clinical_vocabularies/by_term?term=diabetes&source_lang=ENG&output_lang=ENG
 
 ## Known Bugs
 * N/A
