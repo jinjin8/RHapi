@@ -24,6 +24,8 @@ gem 'puma', '~> 3.7'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
+
+# project specific gems
 gem 'tiny_tds'
 gem 'activerecord-sqlserver-adapter'
 gem 'kaminari'
@@ -31,6 +33,13 @@ gem 'kaminari'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'pry'
+  gem 'simplecov', require: false
+  gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'shoulda-callback-matchers'
 end
 
 group :development do
