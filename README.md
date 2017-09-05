@@ -12,13 +12,15 @@ An API that returns stored procedures from KnowledgeBase dbo.
 ## Development server
 Create a .env file in the root directory. Set HIDDEN_USERNAME=, HIDDEN_PASSWORD=, and HIDDEN_HOST= to the correct values.
 
-Run `rails s` for a dev server. Navigate to `http://localhost:3000/`. This will display the first 25 hits from the database.
+Run `rails s` for a dev server. Navigate to `http://localhost:5000/`. This will display the first 25 hits from the database.
 
 ## Paths
-* Read: localhost:3000/clinical_vocabularies
-* Search by term: http://localhost:3000/clinical_vocabularies/by_term?term=diabetes&source_lang=ENG&output_lang=ENG
-
+* Read: localhost:5000/clinical_vocabularies
+* Get Problem: http://localhost:5000/clinical_vocabularies/problem?term=asthma&source_lang=ENG&output_lang=ENG
 In this URL, replace "diabetes" and "ENG" with the desired values to customize your search.
+* Get Chart:
+http://localhost:5000/charts/chart
+Returns 1 hard coded object  
 
 ## Technologies Used
 * [Ruby](https://www.ruby-lang.org/en/downloads/)

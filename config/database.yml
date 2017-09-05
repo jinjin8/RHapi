@@ -20,34 +20,34 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   # pool: 5
-
 development:
-
   adapter: sqlserver
   database: KnowledgeBase
-
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
   username: <%= ENV['HIDDEN_USERNAME'] %>
-
   # The password associated with the postgres role (username).
   password: <%= ENV['HIDDEN_PASSWORD'] %>
-
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
   host: <%= ENV['HIDDEN_HOST'] %>
-
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
   port: 1433
-  timeout: 20
-
+  timeout: 40
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
-
+other_development:
+    adapter: sqlserver
+    database: sEMR
+    username: <%= ENV['HIDDEN_USERNAME'] %>
+    password: <%= ENV['HIDDEN_PASSWORD'] %>
+    host: <%= ENV['HIDDEN_HOST'] %>
+    port: 1433
+    timeout: 40
   # Minimum log levels, in increasing order:
   #   debug5, debug4, debug3, debug2, debug1,
   #   log, notice, warning, error, fatal, and panic
