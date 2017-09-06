@@ -18,17 +18,16 @@ HIDDEN_HOST=
 Run `rails s` for a dev server.
 
 ## Paths
+For both paths if a required parameter is not listed or given a value or any of the records do not exist, an empty array will be returned.
 * Get Problem: http://localhost:5000/problems?term=asthma&source_language=ENG&output_language=ENG
-Replace "asthma" and "ENG" with the desired values to customize your search. If the term or language is not available an empty array will be returned.
+Replace "asthma" and "ENG" with the desired values to customize search.
 * Get Chart:
-http://localhost:5000/charts?domain=ProblemLists&record_id=1
-Replace "ProblemsList" with desired domain and "1" with corresponding RecordID. These are the minimum parameters to get a response. If the record does not exist an empty array will be returned. The following parameters are also available.
+http://localhost:5000/charts?domain=ProblemLists&patiet_id=1&physician_id=1
+Replace "ProblemsList" with desired values to customize search. These are the minimum parameters to get a response. The following parameters are also available with the stored procedure equivalent.
   * domain = Domain
   * record_id = RecordID
   * patient_id = PatientID
   * physician_id = PhysicianID
-  * clinic_id = ClinicID,
-  * provenance_id = ProvenanceID
   * sort_field = SortField
   * sort_order = SortOrder
   * row_offset = RowOffset
@@ -42,7 +41,6 @@ Replace "ProblemsList" with desired domain and "1" with corresponding RecordID. 
 * [Dbeaver](https://dbeaver.jkiss.org/)
 * [Tiny TDS](https://github.com/rails-sqlhserver/tiny_tds)
 * [ActiveRecord SQLServer Adapter](https://github.com/rails-sqlserver/activerecord-sqlserver-adapter)
-* [kaminari](https://github.com/kaminari/kaminari)
 * [AWS CodeCommit](https://aws.amazon.com/codecommit/)
 
 ## Known Bugs
