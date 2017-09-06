@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # root to: 'charts#index'
 
-  resources :clinical_vocabularies do
+  resources :problems do
     get 'page/:page', action: :index, on: :collection, as: ''
     collection do
       get :problem
