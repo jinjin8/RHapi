@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :clinical_vocabulary do
+  factory :problem do
     term('Asthma')
     source_lang('ENG')
     output_lang('ENG')

@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 describe "get by term route", :type => :request do
-  clinical_vocabulary = FactoryGirl.create(:clinical_vocabulary)
+  problem = FactoryGirl.create(:problem)
 
   it 'returns successful route response' do
-    get "/clinical_vocabulary/by_term?term=#{clinical_vocabulary.term}&#{clinical_vocabulary.source_lang}&#{clinical_vocabulary.output_lang}"
+    get "/problem/by_term?term=#{problem.term}&#{problem.source_lang}&#{problem.output_lang}"
     expect(response).to have_https_status(200)
   end
 end
