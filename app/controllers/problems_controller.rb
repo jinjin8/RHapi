@@ -1,6 +1,6 @@
 class ProblemsController < ApplicationController
   def index
-    problem = Problem.problem(params[:term], params[:input_lang], params[:output_lang])
+    problem = Problem.problem(params[:term], params[:input_language], params[:output_language])
     render json: problem
   end
 
@@ -12,7 +12,7 @@ class ProblemsController < ApplicationController
 #Define function of route to communicate with the database and take a term, source language, and output language, returning all corresponding hits from database.
 
   def problem
-    problem = Problem.problem(params[:term], params[:input_lang], params[:output_lang])
+    problem = Problem.problem(params[:term], params[:input_language], params[:output_language])
     render json: problem
   end
 end
