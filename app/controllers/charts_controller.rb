@@ -11,7 +11,7 @@ class ChartsController < ApplicationController
   end
 
   def chart
-    chart = Chart.chart(params[:physician_idomain], params[:record_id], params[:patient_id],params[:d], params[:clinic_id], params[:provenance_id], params[:sort_field], params[:sort_order], params[:row_offset], params[:rows_in_subset], params[:input_language],params[:onput_language])
+    chart = Chart.chart(params[:domain], params[:record_id], params[:patient_id],params[:physician_id], params[:clinic_id], params[:provenance_id], params[:sort_field], params[:sort_order], params[:row_offset], params[:rows_in_subset], params[:input_language],params[:output_language])
     render json: chart
   end
 

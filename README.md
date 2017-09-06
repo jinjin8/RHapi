@@ -23,18 +23,18 @@ Replace "asthma" and "ENG" with the desired values to customize your search. If 
 * Get Chart:
 http://localhost:5000/charts?domain=ProblemLists&record_id=1
 Replace "ProblemsList" with desired domain and "1" with corresponding RecordID. These are the minimum parameters to get a response. If the record does not exist an empty array will be returned. The following parameters are also available.
-  * domain=Domain
-  * record_id=RecordID
-  * patient_id=PatientID
-  * physician_id=PhysicianID
-  * clinic_id=ClinicID,
-  * provenance_id=ProvenanceID
-  * sort_field=SortField
-  * sort_order=SortOrder
-  * row_offset=RowOffset
-  * rows_in_subset=RowsInSubset
-  * input_language=InputLanguage
-  * output_language=OutputLanguage
+  * domain = Domain
+  * record_id = RecordID
+  * patient_id = PatientID
+  * physician_id = PhysicianID
+  * clinic_id = ClinicID,
+  * provenance_id = ProvenanceID
+  * sort_field = SortField
+  * sort_order = SortOrder
+  * row_offset = RowOffset
+  * rows_in_subset = RowsInSubset
+  * input_language = InputLanguage
+  * output_language = OutputLanguage
 
 ## Technologies Used
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
