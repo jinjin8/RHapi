@@ -1,6 +1,11 @@
 class ChartsController < ApplicationController
+  # def index
+  #   chart = Chart.all
+  #   render json: chart
+  # end
+
   def index
-    chart = Chart.all
+    chart = Chart.chart(params[:a], params[:b], params[:c],params[:d], params[:e], params[:f], params[:g], params[:h], params[:i], params[:j],'ENG', 'ENG')
     render json: chart
   end
 

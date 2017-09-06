@@ -1,6 +1,6 @@
 class ProblemsController < ApplicationController
   def index
-    problem = Problem.all.page params[:page]
+    problem = Problem.problem(params[:term], params[:input_lang], params[:output_lang])
     render json: problem
   end
 
