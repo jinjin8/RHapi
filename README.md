@@ -1,6 +1,6 @@
 # RHapi API
 
-#### _By Jin Camou, Susha Dore, Ben Williams_
+#### _Jin Camou, Susha Dore, Ben Williams_
 
 ## Description
 An API that returns stored procedures from Recentia Health database.
@@ -15,16 +15,17 @@ HIDDEN_USERNAME=
 HIDDEN_PASSWORD=  
 HIDDEN_HOST=
 
-Run `$ rails s` for a dev server.
+Run `rails s` for a dev server.
 
 ## Paths
 For both paths if a required parameter is not listed or given a value or any of the records do not exist, an empty array will be returned.
 * Get Problem: http://localhost:5000/problems?term=asthma&source_language=ENG&output_language=ENG
 Replace "asthma" and "ENG" with the desired values to customize search.
 * Get Chart:
-http://localhost:5000/charts?domain=ProblemLists&patient_id=1&physician_id=1
-Replace "ProblemsList" and "1" with desired values to customize search. These are the minimum parameters for the database query. The following parameters are also available and listed with the stored procedure equivalent.
+http://localhost:5000/charts?domain=ProblemLists&patiet_id=1&physician_id=1
+Replace "ProblemsList" with desired values to customize search. These are the minimum parameters to get a response. The following parameters are also available with the stored procedure equivalent.
   * domain = Domain
+  * record_id = RecordID
   * patient_id = PatientID
   * physician_id = PhysicianID
   * sort_field = SortField
@@ -44,3 +45,10 @@ Replace "ProblemsList" and "1" with desired values to customize search. These ar
 
 ## Known Bugs
 * N/A
+
+## License
+*This software is licensed under MIT license.*
+
+```
+Copyright (c) 2017 Jin Camou, Susha Dore, Ben Williams
+```
