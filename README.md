@@ -10,7 +10,7 @@ An API that returns stored procedures from Recentia Health database.
 * `$ cd RHapi`
 
 ## Development server
-Create a .env file in the root directory and set these variables to the correct values in that file.
+Create a .env file in the root directory and set these variables to the correct values which are related to the database. 
 HIDDEN_USERNAME=
 HIDDEN_PASSWORD=  
 HIDDEN_HOST=
