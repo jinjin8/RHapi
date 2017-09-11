@@ -20,10 +20,14 @@ Run `rails s` for a dev server.
 ## Paths
 For both paths if a required parameter is not listed or given a value or any of the records do not exist, an empty array will be returned.
 * Get Problem: http://localhost:5000/problems?term=thyroiditis&input_language=ENG&output_language=ENG
-Replace "thyroiditis" and "ENG" with the desired values to customize search.
+![marshmallow](public/images/problem_ENG.png)
+Replace "thyroiditis" and "ENG" with the desired values to customize search. Term, InputLanguage & OutputLanguage are required parameters.
+![marshmallow](public/images/problems_CHI.png)
 * Get Chart:
 http://localhost:5000/charts?domain=ProblemLists&patient_id=1&physician_id=1
-Replace "ProblemsList" with desired values which must match database values including capitalization to customize search. These are the minimum parameters to get a response. The following parameters are also available with the stored procedure equivalent.
+Replace "ProblemsList" & "1" with desired values which must match database values including capitalization to customize search. Domain, PatientID and PhysicianID are required parameters.
+![marshmallow](public/images/chart.png)
+The following parameters are also available with the stored procedure name equivalent.
   * domain = Domain
   * record_id = RecordID
   * patient_id = PatientID
@@ -38,7 +42,6 @@ Replace "ProblemsList" with desired values which must match database values incl
 ## Technologies Used
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
 * [Rails](http://rubyonrails.org/)
-* [Dbeaver](https://dbeaver.jkiss.org/)
 * [Tiny TDS](https://github.com/rails-sqlhserver/tiny_tds)
 * [ActiveRecord SQLServer Adapter](https://github.com/rails-sqlserver/activerecord-sqlserver-adapter)
 * [AWS CodeCommit](https://aws.amazon.com/codecommit/)
