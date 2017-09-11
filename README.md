@@ -13,7 +13,7 @@ For both paths if a required parameter is not listed or given a value or any of 
 * Problem: http://localhost:5000/problems?term=thyroiditis&input_language=ENG&output_language=ENG
 ![marshmallow](public/images/problem_ENG.png)
 Replace "thyroiditis" and "ENG" with the desired values to customize search. Term, InputLanguage & OutputLanguage are required parameters.
-![marshmallow](public/images/problems_CHI.png)
+![marshmallow](public/images/problem_CHI.png)
 * Chart:
 http://localhost:5000/charts?domain=ProblemLists&patient_id=1&physician_id=1
 Replace "ProblemsList" & "1" with desired values which must match database values including capitalization to customize search. Domain, PatientID and PhysicianID are required parameters.
