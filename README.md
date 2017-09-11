@@ -1,29 +1,20 @@
 # RHapi API
 
-#### _Jin Camou, Susha Dore, Ben Williams_
-
-## Description
-An API that returns stored procedures from Recentia Health database.
+An example of an API that returns custom stored procedures from Recentia Health database.
 
 ## Installation
-* `$ git clone https://git-codecommit.us-west-2.amazonaws.com/v1/repos/RHapi`
+* `$ git clone https://github.com/sushadore/RHapi`
 * `$ cd RHapi`
-
-## Development server
-Create a .env file in the root directory and set these variables to the correct values which are related to the database.
-HIDDEN_USERNAME=
-HIDDEN_PASSWORD=  
-HIDDEN_HOST=
-
-Run `rails s` for a dev server.
+* Open file with text editor.
 
 ## Paths
+The following paths only function when attached to the database which is proprietary and not available for public use. The screen shots give examples of browser rendering.
 For both paths if a required parameter is not listed or given a value or any of the records do not exist, an empty array will be returned.
-* Get Problem: http://localhost:5000/problems?term=thyroiditis&input_language=ENG&output_language=ENG
+* Problem: http://localhost:5000/problems?term=thyroiditis&input_language=ENG&output_language=ENG
 ![marshmallow](public/images/problem_ENG.png)
 Replace "thyroiditis" and "ENG" with the desired values to customize search. Term, InputLanguage & OutputLanguage are required parameters.
 ![marshmallow](public/images/problems_CHI.png)
-* Get Chart:
+* Chart:
 http://localhost:5000/charts?domain=ProblemLists&patient_id=1&physician_id=1
 Replace "ProblemsList" & "1" with desired values which must match database values including capitalization to customize search. Domain, PatientID and PhysicianID are required parameters.
 ![marshmallow](public/images/chart.png)
@@ -44,4 +35,6 @@ The following parameters are also available with the stored procedure name equiv
 * [Rails](http://rubyonrails.org/)
 * [Tiny TDS](https://github.com/rails-sqlhserver/tiny_tds)
 * [ActiveRecord SQLServer Adapter](https://github.com/rails-sqlserver/activerecord-sqlserver-adapter)
-* [AWS CodeCommit](https://aws.amazon.com/codecommit/)
+
+#### Authors
+Jin Camou, Susha Dore, Ben Williams
