@@ -17,17 +17,6 @@ Replace "thyroiditis" and "ENG" with the desired values to customize search. ter
 http://localhost:5000/charts?domain=ProblemLists&patient_id=1&physician_id=1
 Replace "ProblemsList" & "1" with desired values to customize search. domain, patient_id and physician_id are required parameters. All data is sample data thus actual patient records are not stored, accessed, or displayed.
 ![marshmallow](public/images/chart.png)
-The following parameters are also available with the stored procedure name equivalent.
-  * domain = Domain
-  * record_id = RecordID
-  * patient_id = PatientID
-  * physician_id = PhysicianID
-  * sort_field = SortField
-  * sort_order = SortOrder
-  * row_offset = RowOffset
-  * rows_in_subset = RowsInSubset
-  * input_language = InputLanguage
-  * output_language = OutputLanguage
 
 ## Technologies Used
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
