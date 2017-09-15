@@ -1,7 +1,7 @@
 # RHapi API
 
 An example of an API returning custom stored procedures from Recentia Health database.
-
+[Install App on VM](#install-app-on-vm)
 ## Installation
 * `$ git clone https://github.com/sushadore/RHapi`
 * `$ cd RHapi`
@@ -37,3 +37,5 @@ The following parameters are also available with the stored procedure name equiv
 
 #### Authors
 Jin Camou, Susha Dore, Ben Williams
+
+### Install App on VM
